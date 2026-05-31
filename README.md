@@ -50,8 +50,8 @@ Run the following commands in your terminal (Command Prompt, PowerShell, or bash
 
 ### Academic Credentials
 *   **Pre-configured Evaluator Profile:**
-    *   **Username:** `Faculty_Evaluator`
-    *   **Password:** `admin123`
+    *   **Username:** `java_demo`
+    *   **Password:** `1234`
     *   *Log in with this account to view an active portfolio and pre-existing watchlist!*
 
 ---
@@ -110,7 +110,7 @@ graph TD
 
 ---
 
-## 🎨 Advanced Design Patterns & Visual Touches (High Impact!)
+## 🎨 Advanced Design Patterns & Visual Touches (High Impact)
 
 To increase academic score and wow faculty, we integrated advanced engineering concepts:
 
@@ -125,27 +125,3 @@ To increase academic score and wow faculty, we integrated advanced engineering c
 
 ### 3. FlatLaf Styling (Dark UI)
 *   FlatLaf is a modern, flat look-and-feel library for Swing. It enables a dark terminal design out-of-the-box. We used rounded borders (`UIManager.put("Button.arc", 12)`), smooth scrolls, custom cell colors, and a FlatDarkLaf theme to break the outdated default Swing look.
-
----
-
-## 👨‍🏫 Faculty Presentation Guidelines
-
-When presenting this project to your university faculty:
-
-1.  **Start with the Logged Out screen:** Highlight the FlatLaf theme. Register a new user, pointing out that validation prevents commas and checks passwords.
-2.  **Open the Leaderboard panel first:** Explain that mock records (Rakesh Jhunjhunwala) are stored in the filesystem database (`data/users.csv`). Show that rankings are computed in real time.
-3.  **Explain File Persistence:** Show them the `data/` folder. Explain that no heavyweight database was used so that the project remains portable (runs on any PC instantly), but native Java File I/O (`BufferedReader`/`BufferedWriter`) was implemented to show core Java knowledge.
-4.  **Demonstrate the Simulation & Chart:** Select `RELIANCE` on the dashboard. Let them watch the ticker prices flash green/red. Show them how the JFreeChart updates live, and how news events affect the Market Mood Indicator.
-5.  **Place a Trade:** Buy 10 shares of `TCS`. Show that your sidebar cash balance gets debited instantly. Switch to the `Portfolio` tab to see your live profit/loss updates. Switch to `Transactions` to show the logged record.
-6.  **Open StonBot:** Type a question or click the chips. Explain that the chatbot handles natural keyword searches (like "what is a stock" or "risk") and formats output in clean HTML inside the Swing text area.
-
----
-
-## 📄 Resume Description (Ready-to-Paste)
-
-**Virtual Stock Market Trading Simulator | Java, Swing, Maven, FlatLaf, JFreeChart**
-*   Designed and built a modular desktop trading simulator in Java using MVC architecture, FlatLaf dark theme, and JFreeChart.
-*   Implemented a multi-threaded price simulation engine updating stock prices and a Market Mood Index (MMI) every 3 seconds using a random-walk algorithm, controlled by simulated market news events.
-*   Applied the **Observer Pattern** to push live stock ticks to multiple visual panels and the **Singleton Pattern** to guarantee a single-source-of-truth state.
-*   Engineered a persistent file-based CSV database system to store user accounts, secure credentials, portfolio shares, and transaction history.
-*   Created **StonBot**, an offline HTML-formatted rule-based AI chatbot with keyword parsing to answer stock trading inquiries and financial strategies.
