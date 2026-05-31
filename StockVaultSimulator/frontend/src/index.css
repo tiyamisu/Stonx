@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&family=Geist:wght@300;400;500;600;700;855;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: #080b0e;
+  --color-surface-default: #111418;
+  --color-surface-hover: #1a1f26;
+  --color-surface-border: #242b36;
+  
+  --color-accent-amber: #FDA481;
+  --color-accent-orange: #FF8C42;
+  --color-accent-gold: #FFB347;
+  --color-accent-rust: #E8613C;
+  
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #475569;
+  
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --shadow-glow: 0 0 30px rgba(253, 164, 129, 0.18);
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Webkit Smooth Scroll & Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #07090d;
+  color: #f8fafc;
+  font-family: 'Plus Jakarta Sans', 'Geist', 'Inter', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Continuous Horizontal Scrolling Ticker Marquee Keyframes */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 45s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Premium Dynamic Lighting & Glow Keyframes */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 12s ease infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { transform: scale(1); opacity: 0.4; }
+  50% { transform: scale(1.05); opacity: 0.65; }
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 8s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+.animate-float {
+  animation: floating 6s ease-in-out infinite;
+}
+
+/* Faux glassmorphism border card styles */
+.glassmorphic-card {
+  background: rgba(17, 20, 24, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glassmorphic-card-hover:hover {
+  border-color: rgba(253, 164, 129, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(253, 164, 129, 0.07);
+  transform: translateY(-2px);
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1a2030;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3040;
+}
