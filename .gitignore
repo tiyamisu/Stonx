@@ -44,7 +44,7 @@ build/
 *.code-workspace
 
 # Application generated data
-data/
+/data/
 classpath.txt
 *.dat
 logs/
